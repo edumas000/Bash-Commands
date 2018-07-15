@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# -------
+# Aliases
+# -------
+alias ll="ls -al"
+alias ..="cd"
+alias dt="cd ~/Desktop"
+alias op="nano ~/.bash_profile"
+alias sp="source ~/.bash_profile"
+alias o="open ."
+alias cpgrav="cp -r ~/Desktop/WEB-Grav-Admin/ ."
