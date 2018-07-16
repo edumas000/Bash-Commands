@@ -11,7 +11,15 @@ mkd() {
 	mkdir -p "$@" && cd "$_"
 }
 
-#CREATE WEB PROJECT
+#GRAV LOCALHOST
+grav-local() {
+	printf "What localhost port would you like to use (8000)? ->"
+	read -r PORTNUM
+	LOCAL_H="php -S localhost:$PORTNUM system/router.php"
+	eval $LOCAL_H
+}
+
+#CREATE WEB PROJECT USING GRAV
 cwp() {
 	dt
 	IFS=
