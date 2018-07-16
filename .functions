@@ -1,5 +1,22 @@
 #!/usr/bin/env bash
 
-# -------
+echo "LOADED FUNCTIONS"
+
+# -----------
 # Functions
-# -------
+# -----------
+
+#MAKE DIRECTORY
+mkd() {
+	mkdir -p "$@" && cd "$_"
+}
+
+#CREATE WEB PROJECT
+cwp() {
+	dt
+	IFS=
+	printf "What's project folder name? ->"
+	read -r DIRN
+	mkd "WEB-$DIRN"
+	cpgrav
+}

@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+echo "LOADED MY PROFILE"
+
 # -------
 # Personal Profile Setting
 # -------
+
+# Load the shell dotfiles:
+
+# for file in ~/Desktop/Bash-Commands/.{alias,functions,prompt,my_profile}; do
+#         [ -r "$file" ] && [ -f "$file" ] && source "$file";
+# done;
+# unset file;
